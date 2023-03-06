@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="profileForm">
+      <div class="form-group">
+        <label for="exampleInputName">Form Name</label>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Enter name"
+          formControlName="firstName">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+          formControlName="lastName">
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Ekle</button>
+    </form>
+  </div>
+</div>
+
+<!-- <ng-select [(ngModel)]="selectedCar" [items]=cars bindValue=id bindLabel=name>
+<ng-option *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option> 
+</ng-select> -->
